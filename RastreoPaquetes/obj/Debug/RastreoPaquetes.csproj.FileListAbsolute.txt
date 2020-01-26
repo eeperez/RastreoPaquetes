@@ -1,0 +1,6 @@
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\bin\Debug\RastreoPaquetes.exe.config
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\bin\Debug\RastreoPaquetes.exe
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\bin\Debug\RastreoPaquetes.pdb
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\obj\Debug\RastreoPaquetes.csprojAssemblyReference.cache
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\obj\Debug\RastreoPaquetes.exe
+F:\CursoSOLID\RastreoPaquetes\RastreoPaquetes\RastreoPaquetes\obj\Debug\RastreoPaquetes.pdb

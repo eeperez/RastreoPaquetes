@@ -1,0 +1,3 @@
+Ticul,Motul,80,Estafeta,Tren,24/01/2020 14:00:00
+Toluca,Merida,500,DHL,Barco,26/01/2020 14:00:00
+Cozumel,Tuxtla,800,Fedex,Barco,27/01/2020 12:00:00
