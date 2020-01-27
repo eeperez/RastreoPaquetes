@@ -24,7 +24,7 @@ namespace RastreoPaquetes.Creadores
 		{
 			IEmpresa fedexBarco;
 			IMetodoEnvio envioBarco = _lstMetodosEnvio.Where(m => m.metodoEnvioDTO.cNombre.ToLower() == "barco").FirstOrDefault();
-			EmpresaDTO fedexDTO = new EmpresaDTO { cNombre = "Fedex", dMargenUtilidad = 50 };
+			EmpresaDTO fedexDTO = new EmpresaDTO { cNombre = "Fedex", dMargenUtilidad = 0.50m };
 
 			fedexBarco = new Fedex(envioBarco, fedexDTO);
 
@@ -35,7 +35,7 @@ namespace RastreoPaquetes.Creadores
 		{
 			IEmpresa dhlBarco;
 			IMetodoEnvio envioBarco = _lstMetodosEnvio.Where(m => m.metodoEnvioDTO.cNombre.ToLower() == "barco").FirstOrDefault();
-			EmpresaDTO dhlDTO = new EmpresaDTO { cNombre = "DHL", dMargenUtilidad = 40 };
+			EmpresaDTO dhlDTO = new EmpresaDTO { cNombre = "DHL", dMargenUtilidad = 0.40m };
 
 			dhlBarco = new DHL(envioBarco, dhlDTO);
 
@@ -46,7 +46,7 @@ namespace RastreoPaquetes.Creadores
 		{
 			IEmpresa dhlAvion;
 			IMetodoEnvio envioAvion = _lstMetodosEnvio.Where(m => m.metodoEnvioDTO.cNombre.ToLower() == "avión").FirstOrDefault();
-			EmpresaDTO dhlDTO = new EmpresaDTO { cNombre = "DHL", dMargenUtilidad = 40 };
+			EmpresaDTO dhlDTO = new EmpresaDTO { cNombre = "DHL", dMargenUtilidad = 0.40m };
 
 			dhlAvion = new DHL(envioAvion, dhlDTO);
 
@@ -57,7 +57,7 @@ namespace RastreoPaquetes.Creadores
 		{
 			IEmpresa estafetaTren;
 			IMetodoEnvio envioTren = _lstMetodosEnvio.Where(m => m.metodoEnvioDTO.cNombre.ToLower() == "tren").FirstOrDefault();
-			EmpresaDTO estafetaDTO = new EmpresaDTO { cNombre = "Estafeta", dMargenUtilidad = 20 };
+			EmpresaDTO estafetaDTO = new EmpresaDTO { cNombre = "Estafeta", dMargenUtilidad = 0.20m };
 
 			estafetaTren = new DHL(envioTren, estafetaDTO);
 

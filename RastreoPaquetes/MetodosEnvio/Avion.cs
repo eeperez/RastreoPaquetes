@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RastreoPaquetes.DTOs;
+﻿using RastreoPaquetes.DTOs;
 using RastreoPaquetes.Interfaces;
+using System;
 
 namespace RastreoPaquetes.MetodosEnvio
 {
