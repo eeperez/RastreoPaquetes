@@ -66,6 +66,7 @@
     <Compile Include="Empresas\DHLUTests.cs" />
     <Compile Include="Empresas\EstafetaUTests.cs" />
     <Compile Include="Empresas\FedexUTests.cs" />
+    <Compile Include="Lectores\LectorArchivoTextoUTests.cs" />
     <Compile Include="MetodosEnvio\AvionUTests.cs" />
     <Compile Include="MetodosEnvio\TrenUTests.cs" />
     <Compile Include="MetodosEnvio\BarcoUTests.cs" />

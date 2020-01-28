@@ -3,8 +3,6 @@ using RastreoPaquetes.Convertidores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RastreoPaquetesUTests.Convertidores
 {
@@ -159,6 +157,44 @@ namespace RastreoPaquetesUTests.Convertidores
 
 			//Assert
 			Assert.AreEqual(0, lstPedidos.Count);
+		}
+
+		[TestMethod]
+		public void ConvertirAPedidos_SinDatosPedido_ListaPedidoVacia()
+		{
+			//Arrange
+			List<string> lstLineas = new List<string>();
+			var SUT = new ConvertidorPedido();
+
+			//Act
+			var lstPedidos = SUT.ConvertirAPedidos(lstLineas);
+
+			//Assert
+			Assert.AreEqual(0, lstPedidos.Count);
+		}
+
+		[TestMethod]
+		public void ConvertirAPedidos_PedidoConDistanciaNoNumerica_ExcepcionFormato()
+		{
+			//Arrange
+			List<string> lstLineas = new List<string>();
+			lstLineas.Add($"origen,destino,distancia incorrecta,paqueteria,medio,20/01/2020");
+			var SUT = new ConvertidorPedido();
+
+			//Assert
+			Assert.ThrowsException<FormatException>(() => SUT.ConvertirAPedidos(lstLineas));
+		}
+
+		[TestMethod]
+		public void ConvertirAPedidos_PedidoConFormatoFechaIncorrecta_ExcepcionFormato()
+		{
+			//Arrange
+			List<string> lstLineas = new List<string>();
+			lstLineas.Add($"origen,destino,80,paqueteria,medio,Fecha incorrecta");
+			var SUT = new ConvertidorPedido();
+
+			//Assert
+			Assert.ThrowsException<FormatException>(() => SUT.ConvertirAPedidos(lstLineas));
 		}
 	}
 }
