@@ -10,7 +10,7 @@ namespace RastreoPaquetes.Verificadores
 		{
 			string cRespuesta = string.Empty;
 
-			var lstEmpresasMismoMedio = ObtenerEmporesasMismoMedio(_empresaPedido, _lstEmpresas);
+			var lstEmpresasMismoMedio = ObtenerEmpresasMismoMedio(_empresaPedido, _lstEmpresas);
 			if (lstEmpresasMismoMedio.Any())
 			{
 				decimal dCostoPedido = _empresaPedido.metodoEnvio.CalcularCostoEnvio(_dDistanciaPedido, _empresaPedido.empresaDTO.dMargenUtilidad);
@@ -28,7 +28,7 @@ namespace RastreoPaquetes.Verificadores
 			return cRespuesta;
 		}
 
-		private List<IEmpresa> ObtenerEmporesasMismoMedio(IEmpresa _empresaPedido, List<IEmpresa> _lstEmpresas)
+		private List<IEmpresa> ObtenerEmpresasMismoMedio(IEmpresa _empresaPedido, List<IEmpresa> _lstEmpresas)
 		{
 			List<IEmpresa> lstEmpresasMismoMedio = (from empresa in _lstEmpresas
 													where empresa.empresaDTO.cNombre != _empresaPedido.empresaDTO.cNombre &&

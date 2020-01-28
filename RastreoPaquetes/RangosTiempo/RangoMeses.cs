@@ -24,7 +24,7 @@ namespace RastreoPaquetes.RangosTiempo
 			if (Math.Abs(diferencia.Days) > 30)
 			{
 				int idif = diferencia.Days / 30;
-				cRango = $"{Math.Abs(idif)} Mes(es)";
+				cRango = $"{Math.Abs(idif)} mes(es)";
 			}
 			else
 			{

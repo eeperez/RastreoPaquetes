@@ -20,10 +20,10 @@ namespace RastreoPaquetes.Verificadores
 			List<string> lstMensajes = new List<string>();
 
 			if (!_lstPedidos.Any())
-				lstMensajes.Add("Es necesario indicar pedido de forma correcta.");
+				lstMensajes.Add("Es necesario indicar al menos un pedido con el formato correcto.");
 
 			if (!_lstEmpresas.Any())
-				lstMensajes.Add("Es necesario tener minimo una empresa de envíos.");
+				lstMensajes.Add("Es necesario tener mínimo una empresa de envíos.");
 
 			if (lstMensajes.Any())
 			{

@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Convertidores\ConvertidorPedidoUTests.cs" />
     <Compile Include="Empresas\DHLUTests.cs" />
     <Compile Include="Empresas\EstafetaUTests.cs" />
     <Compile Include="Empresas\FedexUTests.cs" />
@@ -71,6 +72,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RangosTiempo\RangoDiasUTests.cs" />
     <Compile Include="RangosTiempo\RangoHorasUTests.cs" />
+    <Compile Include="RangosTiempo\RangoMesesUTests.cs" />
+    <Compile Include="RangosTiempo\RangoMinutosUTests.cs" />
+    <Compile Include="Verificadores\ValidadorInformacionUTests.cs" />
+    <Compile Include="Verificadores\ValidadorMedioTransporteDelPedidoUTests.cs" />
+    <Compile Include="Verificadores\ValidadorPaqueteriaUTests.cs" />
+    <Compile Include="Verificadores\VerificadorEconomicoMismoMedioUTests.cs" />
+    <Compile Include="Verificadores\VerificadorEstadoPaqueteUTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -26,10 +26,10 @@ namespace RastreoPaquetes.Verificadores
 
 		public string VerificarPrevioCostoPaquete()
 		{
-			string cMensaje = "tendra";
+			string cMensaje = "tendrá";
 
 			if (VerificarPaqueteEntregado())
-				cMensaje = "tuvó";
+				cMensaje = "tuvo";
 
 			return cMensaje;
 		}
